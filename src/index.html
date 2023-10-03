@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/output.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="input.css" /> -->
+  </head>
+  <body class="">
+    <!-- Nav start -->
+    <nav
+      class="w-full py-3 px-4 md:py-4 lg:px-8 flex justify-between items-center relative"
+    >
+      <div class="flex gap-x-2 items-center">
+        <button class="h-[24px] w-[34px] md:hidden" id="openNavBtn">
+          <img
+            src="../public/images/hamburger.svg"
+            alt=""
+            class="block h-full w-full max-h-full max-w-full"
+          />
+        </button>
+        <figure class="h-[40px] w-[40px] md:h-[50px] md:w-[50px]">
+          <img
+            src="../public/images/nav-logo.png"
+            alt=""
+            class="block h-full w-full max-h-full max-w-full"
+          />
+        </figure>
+      </div>
+      <nav class="flex justify-end md:gap-x-9 items-center">
+        <nav class="hidden md:flex gap-x-9 items-center">
+          <a
+            href="#why_choose_us"
+            class="text-linkColor text-xl hover:text-primaryColor transition-all duration-700"
+            >Why Choose Us</a
+          >
+          <a
+            href="#features"
+            class="text-linkColor text-xl hover:text-primaryColor transition-all duration-700"
+            >Features</a
+          >
+          <a
+            href="#pricing"
+            class="text-linkColor text-xl hover:text-primaryColor transition-all duration-700"
+            >Pricing</a
+          >
+        </nav>
+        <a
+          href="https://calendly.com/localchow/reko-farm-d2c-software-demo?month=2023-09"
+          target="_blank"
+          class="bg-primaryColor w-[131px] h-[39px] grid place-items-center lg:w-[157px] lg:h-[47px] group text-sm md:text-base rounded-full text-white relative overflow-hidden"
+        >
+          <span
+            class="inline-block absolute h-full left-0 top-0 bg-secondaryText duration-1000 transition-all z-[1] w-0 group-hover:w-full"
+            aria-hidden="true"
+          ></span>
+          <span class="z-[2] relative"> Book a Demo</span>
+        </a>
+      </nav>
+      <!-- Drawer start -->
+      <nav class="md:hidden navContainer" id="navContainer">
+        <div class="flex justify-between items-center mb-24">
+          <figure class="h-[40px] w-[40px] md:h-[50px] md:w-[50px]">
+            <img
+              src="../public/images/nav-logo.png"
+              alt=""
+              class="block h-full w-full max-h-full max-w-full"
+            />
+          </figure>
+          <button class="h-[24px] w-[24px]" id="closeNavBtn">
+            <img
+              src="../public/images/x.svg"
+              alt=""
+              class="block h-full w-full max-h-full max-w-full"
+            />
+          </button>
+        </div>
+        <nav class="w-full flex justify-center flex-col gap-y-16 items-center">
+          <nav class="flex gap-y-16 justify-center flex-col items-center">
+            <a
+              href="#why_choose_us"
+              class="text-[#808080] text-2xl hover:text-primaryColor transition-all duration-700"
+              >Why Choose Us</a
+            >
+            <a
+              href="#features"
+              class="text-[#808080] text-2xl hover:text-primaryColor transition-all duration-700"
+              >Features</a
+            >
+            <a
+              href="#pricing"
+              class="text-[#808080] text-2xl hover:text-primaryColor transition-all duration-700"
+              >Pricing</a
+            >
+          </nav>
+          <a
+            href="https://calendly.com/localchow/reko-farm-d2c-software-demo?month=2023-09"
+            target="_blank"
+            class="bg-primaryColor w-[261px] h-[47px] grid place-items-center group text-sm md:text-base rounded-full text-white relative overflow-hidden"
+          >
+            <span
+              class="inline-block absolute h-full left-0 top-0 bg-secondaryText duration-1000 transition-all z-[1] w-0 group-hover:w-full"
+              aria-hidden="true"
+            ></span>
+            <span class="z-[2] relative"> Book a Demo</span>
+          </a>
+        </nav>
+      </nav>
+      <!-- Drawer end -->
+    </nav>
+    <!-- Nav end -->
+    <!-- Hero Section start-->
+    <header
+      class="bg-heroB bg-bgColor h-[552px] w-full md:h-[440px] lg:h-[506px] justify-between flex flex-col md:flex-row items-center md:gap-x-8 md:pl-10 md:pr-0 lg:pl-[60px] lg:pr-0 overflow-hidden pt-12 md:pt-0"
+    >
+      <article
+        class="gap-y-3 md:gap-y-4 flex-col md:max-w-sm lg:max-w-[535px] px-5 md:px-0"
+      >
+        <h1
+          class="text-headerColor font-medium text-4xl lg:text-[56px] md:leading-normal mb-4 md:mb-6"
+        >
+          Empowering Farms
+        </h1>
+        <p class="text-[#7B725B] text-sm md:text-xl mb-3 md:mb-6">
+          We build software solutions that help farms efficiently manage their
+          business processes for selling directly to customers.
+        </p>
+        <a
+          href="#features"
+          class="bg-primaryColor w-[146.5px] h-[33.6px] md:w-[211px] md:h-[47px] grid place-items-center group text-xs md:text-base rounded-full text-white relative overflow-hidden"
+        >
+          <span
+            class="inline-block absolute h-full left-0 top-0 bg-secondaryText duration-1000 transition-all z-[1] w-0 group-hover:w-full"
+            aria-hidden="true"
+          ></span>
+          <span class="z-[2] relative">Explore our solutions</span>
+        </a>
+      </article>
+      <figure class="md:hidden w-full h-full">
+        <img
+          src="../public/images/Mobile-Header.png"
+          alt=""
+          class="block h-full w-full max-h-full max-w-full"
+        />
+      </figure>
+      <figure
+        class="hidden w-full h-full self-end md:flex justify-end md:h-96 lg:h-[480px]"
+      >
+        <img
+          src="../public/images/Web-Header.png"
+          alt=""
+          class="block h-full w-ful max-h-full max-w-full"
+        />
+        <!-- <figure
+          class="w-[304px] h-[340px] md:w-[440.5px] md:h-[490px] absolute -bottom-6 right-10 md:left-44 md:-bottom-7 z-10"
+        >
+          <img src="../public/images/farmer.png" alt="" />
+        </figure>
+        <figure
+          class="h-[488.7px] w-[448.7px] md:w-[514.8px] bg-[#F9CC4E] md:h-[514.8px] rounded-full absolute -bottom-[60%] -left-10 md:-bottom-[28%] md:-right-8"
+        ></figure>
+        <figure
+          class="absolute bottom-12 md:bottom-20 z-20 right-0 w-2/3 md:w-full"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="451"
+            height="115"
+            viewBox="0 0 451 115"
+            fill="none"
+          >
+            <path
+              d="M196.799 89.6905C192.713 88.8488 183.438 86.9151 172.828 84.9855C162.222 83.0488 150.268 81.2532 140.883 80.3075C135.453 79.7637 130.023 79.2684 124.59 78.9986C119.156 78.723 113.71 78.6145 108.274 78.6856C97.3966 78.8292 86.539 79.733 75.8288 81.4917C65.1273 83.2603 54.5719 85.9023 44.411 89.6269C34.2529 93.3387 24.5024 98.1602 15.5379 104.17C14.8222 104.622 14.0872 105.163 13.2995 105.713C12.5204 106.272 11.6857 106.827 10.8828 107.435C9.26966 108.646 7.60391 109.865 6.15434 111.004C4.67027 112.104 3.38656 113.109 2.40267 113.745C1.41877 114.381 0.741772 114.653 0.55995 114.372C0.369518 114.081 0.552103 113.493 1.07809 112.659C1.34034 112.239 1.68913 111.755 2.12025 111.212C2.33508 110.938 2.57119 110.653 2.82865 110.355C3.10045 110.067 3.3864 109.762 3.68796 109.448C4.30242 108.815 4.99348 108.127 5.75846 107.395C6.53924 106.678 7.41264 105.943 8.35122 105.154C9.27972 104.35 10.334 103.586 11.432 102.756C12.5215 101.917 13.7296 101.113 14.9902 100.278C21.1017 96.2307 27.5985 92.7825 34.2886 89.825C40.9785 86.8432 47.9038 84.4446 54.9204 82.4476C61.9398 80.4377 69.0827 78.9305 76.2581 77.7611C83.4376 76.5846 90.66 75.81 97.8789 75.3279C108.443 74.6273 119.052 74.6682 129.605 75.3857C140.151 76.1232 150.637 77.3861 161.051 79.0018C181.895 82.2232 202.433 86.8291 222.984 91.0855C232.215 92.988 241.445 94.8663 250.703 96.5433C255.333 97.354 259.963 98.1832 264.612 98.8796C269.253 99.6331 273.903 100.262 278.562 100.829C297.19 103.042 316.026 103.848 334.665 102.195C352.147 100.647 369.47 96.8554 385.561 90.029C387.582 89.1982 389.552 88.2652 391.533 87.3477C393.48 86.3721 395.447 85.4276 397.354 84.3652C399.286 83.3568 401.15 82.2205 403.03 81.1283C404.863 79.9452 406.721 78.8104 408.534 77.5961C415.772 72.7116 422.599 67.1982 429.244 61.428C440.713 51.4685 451.673 40.7596 463.543 30.9398C469.495 26.0405 475.637 21.378 482.218 17.2216C488.82 13.1207 495.812 9.66028 503.116 6.98786C506.552 5.73169 510.382 4.45265 514.385 3.41488C518.38 2.37287 522.548 1.57781 526.576 1.1832C529.896 0.84369 534.374 0.636941 538.834 0.950998C543.298 1.23364 547.721 2.06152 550.92 2.99818C551.613 3.18997 552.314 3.38599 553.003 3.63345L555.08 4.33724C556.44 4.87935 557.81 5.36434 559.097 5.94979C560.606 6.55074 561.901 7.26166 563.09 7.86637C564.238 8.52986 565.263 9.13435 566.129 9.71289C566.982 10.3129 567.708 10.8426 568.307 11.3075C568.884 11.8026 569.34 12.2258 569.679 12.5756C571.037 13.9808 570.505 14.2029 568.373 13.5195C567.91 13.3717 567.821 13.5464 567.532 13.5542C567.386 13.5553 567.195 13.5196 566.884 13.3749C566.561 13.2517 566.109 13.0282 565.467 12.6592C565.359 12.5958 565.147 12.4803 565.047 12.4212L564.305 12.0172L563.542 11.649L562.022 10.8869C561.004 10.4022 559.964 9.94766 558.943 9.47581C556.851 8.61807 554.754 7.7618 552.574 7.10299C548.238 5.71814 543.692 4.76421 539.055 4.47142C533.372 4.07786 527.629 4.46503 521.981 5.38644C519.156 5.85358 516.354 6.48459 513.575 7.20103C510.809 7.96872 508.058 8.79337 505.362 9.78594C502.664 10.7728 499.993 11.838 497.383 13.0453C496.067 13.6212 494.786 14.2797 493.489 14.9054C492.217 15.5794 490.928 16.2094 489.681 16.9317C487.156 18.3054 484.712 19.8282 482.304 21.3964L480.513 22.5992C479.919 23.0072 479.339 23.4423 478.749 23.8617L475.237 26.4008C456.691 40.3163 440.84 57.6615 422.386 72.3124C416.729 76.8015 410.82 81.0215 404.588 84.766C398.34 88.472 391.808 91.6923 385.078 94.399C378.336 97.0845 371.418 99.299 364.397 101.066C357.37 102.811 350.251 104.13 343.096 105.094C335.259 106.099 327.363 106.877 319.343 106.892L319.483 106.892C311.122 107.116 302.747 106.93 294.412 106.358C278.64 105.255 262.654 102.877 247 99.9455C231.332 97.0543 215.956 93.6746 201.24 90.5439C200.086 90.307 198.505 90.0404 196.799 89.6905Z"
+              fill="#5E9C46"
+            />
+          </svg>
+        </figure> -->
+      </figure>
+    </header>
+    <!-- Hero section end -->
+    <!-- Crop-to-Customer section start -->
+    <section class="px-5 md:px-10 lg:px-[60px] bg-white py-10 md:py-20">
+      <article class="w-full max-w-[725px] mb-5">
+        <h3 class="text-black font-medium text-3xl md:text-[44px] mb-5">
+          From Crop to Customer
+        </h3>
+        <p class="text-textColor text-sm md:text-2xl">
+          <span class="text-primaryColor"
+            >Whether you operate a farm or own a local food business,</span
+          >
+          REKO software is designed to help you efficiently manage your
+          business, market, and customers.
+        </p>
+      </article>
+      <article
+        class="flex flex-col gap-x-5 justify-between lg:flex-row items-start"
+      >
+        <figure
+          class="w-full h-[294px] md:w-[596.4px] md:h-[518.6px] rounded-xl"
+        >
+          <img
+            src="../public/images/market.jpeg"
+            alt=""
+            class="w-full h-full max-w-full max-h-full rounded-xl"
+          />
+        </figure>
+        <article class="mt-5 md:mt-8 lg:mt-0 lg:w-1/2">
+          <p class="text-textColor text-sm md:text-2xl mb-5">
+            REKO empowers farmers and food vendors by simplifying and automating
+            much of the management of their business processes.
+          </p>
+          <p class="text-textColor text-sm md:text-2xl mb-5">
+            <span class="text-primaryColor"
+              >We make it easy for customers to find and buy from you,</span
+            >
+            We also help you manage inventory and orders, schedule and
+            availability, orders across multiple locations, and more.
+          </p>
+          <p class="text-textColor text-sm md:text-2xl mb-5">
+            REKO was built with farmers helping design the software every step
+            of the way
+          </p>
+          <p class="text-textColor text-sm md:text-2xl">
+            We are on a mission to help local farms thrive.
+          </p>
+          <figure class="hidden lg:block">
+            <img src="../public/images/Sprinkle.svg" alt="" />
+          </figure>
+        </article>
+      </article>
+    </section>
+    <!-- Crop-to-Customer section end -->
+    <!-- Why choosee session start -->
+    <section
+      class="px-5 md:px-10 lg:px-[60px] py-10 md:py-20 bg-[#EFF5ED]"
+      id="why_choose_us"
+    >
+      <h3
+        class="pb-6 md:pb-10 text-center text-black text-3xl md:text-5xl lg:text-[56px] font-medium"
+      >
+        Why Choose Reko
+      </h3>
+      <!-- card group start-->
+      <article
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-5 md:gap-5"
+      >
+        <!-- single card start-->
+        <div class="bg-white rounded-xl py-9 px-6 md:py-10 md:px-7 shadow">
+          <figure
+            class="h-[45.8px] w-[45.8px] md:h-[50px] md:w-[50px] mb-2 md:mb-3"
+          >
+            <img
+              src="../public/images/efficiency.svg"
+              alt="efficiency icon"
+              class="w-full h-full max-w-full max-h-full"
+            />
+          </figure>
+          <h4 class="text-black text-xl md:text-2xl mb-2 md:mb-3">
+            Improved efficiency
+          </h4>
+          <p class="text-sm md:text-base">
+            Spend less time (up to 50%) on administrative tasks and more on
+            providing quality crops and food.
+          </p>
+        </div>
+        <!-- single card end-->
+        <!-- single card start-->
+        <div class="bg-white rounded-xl py-9 px-6 md:py-10 md:px-7 shadow">
+          <figure
+            class="h-[45.8px] w-[45.8px] md:h-[50px] md:w-[50px] mb-2 md:mb-3"
+          >
+            <img
+              src="../public/images/sales.svg"
+              alt="efficiency icon"
+              class="w-full h-full max-w-full max-h-full"
+            />
+          </figure>
+          <h4 class="text-black text-xl md:text-2xl mb-2 md:mb-3">
+            Reduce customer friction & increase sales
+          </h4>
+          <p class="text-sm md:text-base">
+            By using REKO, you make it easy for customers to find and buy your
+            food. When shopping becomes easy, more customers will place orders
+            and current customers will order more. 
+          </p>
+        </div>
+        <!-- single card end-->
+        <!-- single card start-->
+        <div class="bg-white rounded-xl py-9 px-6 md:py-10 md:px-7 shadow">
+          <figure
+            class="h-[45.8px] w-[45.8px] md:h-[50px] md:w-[50px] mb-2 md:mb-3"
+          >
+            <img
+              src="../public/images/operation.svg"
+              alt="efficiency icon"
+              class="w-full h-full max-w-full max-h-full"
+            />
+          </figure>
+          <h4 class="text-black text-xl md:text-2xl mb-2 md:mb-3">
+            Streamlined Operations
+          </h4>
+          <p class="text-sm md:text-base">
+            Let our software do the heavy lifting for inventory and order
+            management, managing schedule and availability, and managing sales
+            at multiple locations.
+          </p>
+        </div>
+        <!-- single card end-->
+        <!-- single card start-->
+        <div class="bg-white rounded-xl py-9 px-6 md:py-10 md:px-7 shadow">
+          <figure
+            class="h-[45.8px] w-[45.8px] md:h-[50px] md:w-[50px] mb-2 md:mb-3"
+          >
+            <img
+              src="../public/images/market.jpeg"
+              alt="efficiency icon"
+              class="w-full h-full max-w-full max-h-full"
+            />
+          </figure>
+          <h4 class="text-black text-xl md:text-2xl mb-2 md:mb-3">
+            Market Expansion
+          </h4>
+          <p class="text-sm md:text-base">
+            Connect with a wider range of customers and increase your business
+            visibility.
+          </p>
+        </div>
+        <!-- single card end-->
+        <!-- single card start-->
+        <div class="bg-white rounded-xl py-9 px-6 md:py-10 md:px-7 shadow">
+          <figure
+            class="h-[45.8px] w-[45.8px] md:h-[50px] md:w-[50px] mb-2 md:mb-3"
+          >
+            <img
+              src="../public/images/growth.svg"
+              alt="efficiency icon"
+              class="w-full h-full max-w-full max-h-full"
+            />
+          </figure>
+          <h4 class="text-black text-xl md:text-2xl mb-2 md:mb-3">
+            Flexible Growth
+          </h4>
+          <p class="text-sm md:text-base">
+            Adapt to changes in the market and scale your operation as needed to
+            meet demand.
+          </p>
+        </div>
+        <!-- single card end-->
+        <!-- single card start-->
+        <div class="bg-white rounded-xl py-9 px-6 md:py-10 md:px-7 shadow">
+          <figure
+            class="h-[45.8px] w-[45.8px] md:h-[50px] md:w-[50px] mb-2 md:mb-3"
+          >
+            <img
+              src="../public/images/cost.svg"
+              alt="efficiency icon"
+              class="w-full h-full max-w-full max-h-full"
+            />
+          </figure>
+          <h4 class="text-black text-xl md:text-2xl mb-2 md:mb-3">
+            No Cost to You
+          </h4>
+          <p class="text-sm md:text-base">
+            We don’t charge anything to sellers on the app. No monthly fee, no
+            sales commissions, $0.00. We manage the payment processing, which is
+            passed on to the customer.
+          </p>
+        </div>
+        <!-- single card end-->
+      </article>
+      <!-- card group start-->
+    </section>
+    <!-- Why choosee session end -->
+    <!-- Discover section start -->
+    <section
+      class="px-5 md:px-10 lg:px-[60px] bg-white py-10 md:py-20"
+      id="features"
+    >
+      <h3 class="text-black font-medium text-3xl lg:text-6xl mb-7 md:mb-12">
+        Discover How Our Software Transforms the Way You Manage and Market Your
+        Agricultural/Food Business
+      </h3>
+      <article class="grid grid-cols-1 lg:grid-cols-2 place-items-center mb-5">
+        <article>
+          <article
+            class="w-full max-w-[560px] bg-[#F4F4F4] p-5 mb-6 rounded-lg md:bg-white lg:hover:bg-[#F4F4F4] group"
+            id="setup"
+          >
+            <div class="flex justify-between items-center">
+              <h4
+                class="text-primaryColor font-bold text-xl lg:text-[#808080] lg:group-hover:text-primaryColor md:text-2xl mb-2 md:mb-3"
+              >
+                Quick Item Setup
+              </h4>
+              <img
+                src="../public/images/arrow-up-right.svg"
+                alt="arrow"
+                class="hidden lg:group-hover:block"
+              />
+            </div>
+            <p class="text-black md:text-[#808080] lg:group-hover:text-black">
+              Set up your storefront with a few clicks. REKO's easy-to-use
+              interface allows you to set up your products, locations, and
+              schedules with ease.
+            </p>
+          </article>
+          <article
+            class="w-full max-w-[560px] bg-[#F4F4F4] md:bg-white p-5 mb-6 rounded-lg lg:hover:bg-[#F4F4F4] group"
+            id="inventory"
+          >
+            <div class="flex justify-between items-center">
+              <h4
+                class="text-primaryColor font-bold text-xl lg:text-[#808080] lg:group-hover:text-primaryColor md:text-2xl mb-2 md:mb-3"
+              >
+                Inventory Management
+              </h4>
+              <img
+                src="../public/images/arrow-up-right.svg"
+                alt="arrow"
+                class="hidden lg:group-hover:block"
+              />
+            </div>
+
+            <p class="text-black md:text-[#808080] lg:group-hover:text-black">
+              Manage your inventory in real-time, from anywhere. Easily track
+              your sales, orders, and inventory with REKO's built-in tools.
+            </p>
+          </article>
+          <article
+            class="w-full max-w-[560px] bg-[#F4F4F4] md:bg-white p-5 mb-6 rounded-lg lg:hover:bg-[#F4F4F4] group"
+            id="order"
+          >
+            <div class="flex justify-between items-center">
+              <h4
+                class="text-primaryColor font-bold text-xl lg:text-[#808080] lg:group-hover:text-primaryColor md:text-2xl mb-2 md:mb-3"
+              >
+                Order Management
+              </h4>
+              <img
+                src="../public/images/arrow-up-right.svg"
+                alt="arrow"
+                class="hidden lg:group-hover:block"
+              />
+            </div>
+
+            <p class="text-black md:text-[#808080] lg:group-hover:text-black">
+              Handle orders across multiple locations (farm stand, weekly drop
+              locations, farmers markets, etc.) and all devices. Easily take
+              orders in advance, manage the schedule and availability of items
+              across multiple locations, and more.
+            </p>
+          </article>
+        </article>
+        <!-- <div
+          class="grid grid-cols-1 place-items-center relative lg:w-full lg:h-dull"
+        >
+          <img
+            src="../public/images/Backgroundcircle.png"
+            class="absolute left-0 bottom-0 w-full hidden lg:grid h-full max-h-full max-w-full"
+            alt=""
+          />
+          <figure
+            class="block lg:relative lg:z-20 h-[400px] w-[210.5px] md:h-[612.4px] md:w-[322px] "
+            id="slide2"
+          >
+            <img
+              src="../public/images/phone1.png"
+              alt="phone"
+              class="block h-full w-full max-h-full max-w-full"
+            />
+          </figure>
+        </div> -->
+        <div
+          class="w-full relative h-full grid grid-cols-1 place-items-center overflow-hidden"
+        >
+          <img
+            src="../public/images/Backgroundcircle.png"
+            class="absolute left-0 bottom-0 w-full z-0 h-full max-h-full max-w-full"
+            alt=""
+          />
+          <figure
+            id="slide2"
+            class="hidden active relative z-10 h-[400px] w-[210.5px] md:h-[612.4px] md:w-[322px]"
+          >
+            <img
+              src="../public/images/Quick-Item-Setup.png"
+              alt="phone"
+              class="block h-full w-full max-h-full max-w-full"
+            />
+          </figure>
+          <figure
+            id="slide2"
+            class="hidden relative z-10 h-[400px] w-[210.5px] md:h-[612.4px] md:w-[322px]"
+          >
+            <img
+              src="../public/images/inventory-management.png"
+              alt="phone"
+              class="block h-full w-full max-h-full max-w-full"
+            />
+          </figure>
+          <figure
+            id="slide2"
+            class="hidden relative z-10 h-[400px] w-[210.5px] md:h-[612.4px] md:w-[322px]"
+          >
+            <img
+              src="../public/images/Order-Management.png"
+              alt="phone"
+              class="block h-full w-full max-h-full max-w-full"
+            />
+          </figure>
+        </div>
+      </article>
+      <article class="grid grid-cols-1 lg:grid-cols-2 place-items-center">
+        <div
+          class="w-full hidden relative h-full lg:grid grid-cols-1 place-items-center overflow-hidden"
+        >
+          <img
+            src="../public/images/Backgroundcircle.png"
+            class="absolute left-0 bottom-0 w-full z-0 h-full max-h-full max-w-full"
+            alt=""
+          />
+
+          <figure
+            id="slide"
+            class="hidden active relative z-10 h-[400px] w-[210.5px] md:h-[612.4px] md:w-[322px]"
+          >
+            <img
+              src="../public/images/Stripe.png"
+              class="absolute -right-10 top-20 w-[127px] z-20 h-[49px] max-h-ful max-w-ful"
+              alt=""
+            />
+            <img
+              src="../public/images/Online-Payment-Processing.png"
+              alt="phone"
+              class="block h-full w-full max-h-full max-w-full"
+            />
+          </figure>
+          <figure
+            id="slide"
+            class="hidden relative z-10 h-[400px] w-[210.5px] md:h-[612.4px] md:w-[322px]"
+          >
+            <img
+              src="../public/images/Group-market-functionality.png"
+              alt="phone"
+              class="block h-full w-full max-h-full max-w-full"
+            />
+          </figure>
+        </div>
+
+        <article>
+          <article
+            class="w-full max-w-[560px] bg-[#F4F4F4] lg:bg-white lg:hover:bg-[#F4F4F4] p-5 mb-6 rounded-lg cursor-pointer group"
+            id="payment"
+          >
+            <div class="flex justify-between items-center">
+              <h4
+                class="text-primaryColor lg:group-hover:text-primaryColor lg:text-[#808080] font-bold text-xl md:text-2xl mb-2 md:mb-3"
+              >
+                Online Payment Processing
+              </h4>
+              <img
+                src="../public/images/arrow-up-right.svg"
+                alt="arrow"
+                class="hidden lg:group-hover:block"
+              />
+            </div>
+            <p class="text-black lg:text-[#808080] lg:group-hover:text-black">
+              Offer your customers secure, fast, and easy payment options.
+              REKO's built-in payment processing allows you to accept all forms
+              of online payments from anywhere.
+            </p>
+          </article>
+          <article
+            class="w-full max-w-[560px] bg-[#F4F4F4] lg:bg-white lg:hover:bg-[#F4F4F4] p-5 mb-6 rounded-lg cursor-pointer group"
+            id="market"
+          >
+            <div class="flex justify-between items-center">
+              <h4
+                class="text-primaryColor lg:group-hover:text-primaryColor md:text-[#808080] font-bold text-xl md:text-2xl mb-2 md:mb-3"
+              >
+                Group Market Functionality
+              </h4>
+              <img
+                src="../public/images/arrow-up-right.svg"
+                alt="arrow"
+                class="hidden lg:group-hover:block"
+              />
+            </div>
+
+            <p class="text-black md:text-[#808080] lg:group-hover:text-black">
+              Want to sell as a group? Create a group market (farmers market,
+              reko ring, food co-op, etc.) inside REKO and invite all of your
+              producers to participate! REKO makes it easy to set up and manage
+              a group market where your customers can come together and easily
+              buy from everyone.
+            </p>
+          </article>
+        </article>
+      </article>
+    </section>
+    <!-- Discover section end -->
+    <!-- Sneak peak section start -->
+    <section class="px-5 md:px-10 lg:px-[60px] py-10 md:py-20 bg-[#EFF5ED]">
+      <h3
+        class="pb-8 md:pb-12 text-center text-black text-3xl md:text-5xl lg:text-[56px]"
+      >
+        Take a Sneak Peek
+      </h3>
+      <article class="flex gap-x-5 items-center justify-center overflow-scroll">
+        <!-- Slide 1 start -->
+        <figure
+          class="h-[498px] w-[261.8px] md:w-[181.44px] md:h-[348px] shrink-0"
+        >
+          <img
+            src="../public/images/slide1.png"
+            alt="app sample"
+            class="block h-full w-full max-h-full max-w-full"
+          />
+        </figure>
+        <!-- Slide 1 end -->
+        <!-- Slide 2 start -->
+        <figure
+          class="h-[498px] w-[261.8px] md:w-[216.44px] md:h-[414.7px] shrink-0"
+        >
+          <img
+            src="../public/images/slide2.png"
+            alt="app sample"
+            class="block h-full w-full max-h-full max-w-full"
+          />
+        </figure>
+        <!-- Slide 2 end -->
+        <!-- Slide 3 start -->
+        <figure class="h-[498px] w-[261.8px] md:h-[497.7px] shrink-0">
+          <img
+            src="../public/images/slide3.png"
+            alt="app sample"
+            class="block h-full w-full max-h-full max-w-full"
+          />
+        </figure>
+        <!-- Slide 3 end -->
+        <!-- Slide 4 start -->
+        <figure
+          class="h-[498px] w-[261.8px] md:w-[216.44px] md:h-[414.7px] shrink-0"
+        >
+          <img
+            src="../public/images/slide4.png"
+            alt="app sample"
+            class="block h-full w-full max-h-full max-w-full"
+          />
+        </figure>
+        <!-- Slide 4 end -->
+        <!-- Slide 5 start -->
+        <figure
+          class="h-[498px] w-[261.8px] md:w-[181.44px] md:h-[348px] shrink-0"
+        >
+          <img
+            src="../public/images/slide5.png"
+            alt="app sample"
+            class="block h-full w-full max-h-full max-w-full"
+          />
+        </figure>
+        <!-- Slide 5 end -->
+      </article>
+    </section>
+    <!-- Sneak peak section end -->
+    <!-- Start of price section -->
+    <section
+      class="px-5 md:px-10 lg:px-[60px] py-12 md:py-24 bg-white flex items-start gap-7 lg:gap-10 flex-col lg:flex-row"
+      id="pricing"
+    >
+      <h3
+        class="text-black text-3xl md:text-5xl lg:text-[56px] leading-relaxed"
+      >
+        What Will It Cost You?
+      </h3>
+      <article class="lg:w-3/5">
+        <p class="font-bold text-textColor text-sm md:text-2xl mb-5">
+          Well, absolutely nothing!
+        </p>
+        <p class="text-textColor text-sm md:text-2xl mb-5">
+          <span class="font-bold text-primaryColor">REKO is 100% free</span> for
+          farmers and people selling food. All you need is a smartphone and an
+          internet connection, and our platform will do the rest.
+        </p>
+        <p class="text-sm md:text-2xl text-textColor">
+          Reko manages the payment processing of all payments made using our
+          software. When customers pay, we charge them a little bit extra (10%)
+          that goes to cover the costs of payment processing (about 5%), leaving
+          us with 5% to run the business.
+        </p>
+      </article>
+    </section>
+    <!-- End of price section -->
+    <!-- Start of demo section -->
+    <section
+      class="px-5 md:px-10 lg:px-[60px] py-10 md:py-20 bg-white flex items-start gap-7 lg:gap-10 flex-col lg:flex-row"
+    >
+      <article
+        class="w-full bg-greenMobileBg bg-cente md:bg-greenWebBg px-5 rounded-xl grid place-items-center h-[280px] md:h-[524px]"
+      >
+        <div class="flex flex-col items-center justify-center">
+          <h3
+            class="text-white font-medium text-2xl md:text-[55px] text-center leading-normal"
+          >
+            So What Are You Waiting For?
+          </h3>
+          <p class="text-white text-sm md:text-2xl md:w-3/5 text-center mb-2">
+            Increase Your Farm's Efficiency and Boost Your Local Food Business
+            with Reko!
+          </p>
+          <a
+            href="https://calendly.com/localchow/reko-farm-d2c-software-demo?month=2023-09"
+            target="_blank"
+            class="bg-primaryColor w-[175.44px] h-[38.08px] lg:w-[306px] lg:h-[68px] grid place-items-center group text-sm lg:text-2xl rounded-full text-white relative overflow-hidden"
+          >
+            <span
+              class="inline-block absolute h-full left-0 top-0 bg-secondaryText duration-1000 transition-all z-[1] w-0 group-hover:w-full"
+              aria-hidden="true"
+            ></span>
+            <span class="z-[2] relative">Schedule a Demo Now</span>
+          </a>
+        </div>
+      </article>
+    </section>
+    <!-- End of demo section -->
+    <!-- footer start -->
+    <footer class="px-5 md:px-10 lg:px-[60px] w-full pt-16">
+      <article class="flex justify-between flex-col lg:flex-row gap-5 w-full">
+        <div class="lg:w-1/3">
+          <figure class="h-[40px] w-[40px] md:h-[50px] md:w-[50px]">
+            <img
+              src="../public/images/nav-logo.png"
+              alt=""
+              class="block h-full w-full max-h-full max-w-full"
+            />
+          </figure>
+        </div>
+        <nav
+          class="flex flex-col lg:flex-row justify-between pb-8 gap-10 w-full"
+        >
+          <nav class="space-y-10 order-2 md:order-1">
+            <h3 class="text-primaryColor font-medium text-sm">SERVICES</h3>
+            <a
+              href="#features"
+              class="text-sm text-black block hover:text-primaryColor transition-all duration-700"
+              >Features</a
+            >
+            <a
+              href="#why_choose_us"
+              class="text-sm text-black block hover:text-primaryColor transition-all duration-700"
+              >Why choose us</a
+            >
+            <a
+              href="#pricing"
+              class="text-sm text-black block hover:text-primaryColor transition-all duration-700"
+              >Pricing</a
+            >
+          </nav>
+          <nav class="space-y-10 order-3 md:order-2">
+            <h3 class="text-primaryColor font-medium text-sm">SOCIALS</h3>
+            <a
+              href=""
+              class="text-sm text-black block hover:text-primaryColor transition-all duration-700"
+              >Facebook</a
+            >
+            <a
+              href=""
+              class="text-sm text-black block hover:text-primaryColor transition-all duration-700"
+              >Twitter (X)</a
+            >
+            <a
+              href=""
+              class="text-sm text-black block hover:text-primaryColor transition-all duration-700"
+              >Instagram</a
+            >
+          </nav>
+          <nav class="order-1 md:order-3">
+            <a
+              href="tel:+234900003432"
+              class="text-2xl mb-3 text-black font-medium block hover:text-primaryColor transition-all duration-700"
+              >+234(0) 900 003 432</a
+            >
+            <a
+              href="mailto:reach@reko.com"
+              class="text-sm text-black block hover:text-primaryColor transition-all duration-700"
+              >reach@reko.com</a
+            >
+          </nav>
+        </nav>
+      </article>
+      <nav
+        class="w-full flex flex-col-reverse lg:flex-row justify-center items-center lg:justify-between py-5 px-5 lg:px-[60px]"
+      >
+        <p class="text-xs text-[#656565]">
+          (C) <span id="date"></span> All Rights reserved - Reko
+        </p>
+        <nav class="flex gap-x-5 items-center mb-3 lg:mb-0">
+          <a
+            href=""
+            class="text-xs text-[#656565] block hover:text-primaryColor transition-all duration-700"
+            >Privacy Policy</a
+          >
+          <a
+            href=""
+            class="text-xs text-[#656565] block hover:text-primaryColor transition-all duration-700"
+            >Terms of Service</a
+          >
+          <a
+            href=""
+            class="text-xs text-[#656565] block hover:text-primaryColor transition-all duration-700"
+            >Sitemap</a
+          >
+        </nav>
+      </nav>
+    </footer>
+    <!-- footer end -->
+    <script src="index.js"></script>
+  </body>
+</html>
