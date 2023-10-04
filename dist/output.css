@@ -1578,6 +1578,10 @@ header {
     display: grid;
   }
 
+  .lg\:hidden {
+    display: none;
+  }
+
   .lg\:h-\[47px\] {
     height: 47px;
   }
@@ -1634,6 +1638,14 @@ header {
     flex-direction: row;
   }
 
+  .lg\:items-center {
+    align-items: center;
+  }
+
+  .lg\:justify-center {
+    justify-content: center;
+  }
+
   .lg\:justify-between {
     justify-content: space-between;
   }
@@ -1677,6 +1689,16 @@ header {
 
   .lg\:text-\[56px\] {
     font-size: 56px;
+  }
+
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .lg\:text-\[\#808080\] {
